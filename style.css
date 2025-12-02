@@ -1,0 +1,37 @@
+#logo{
+     height: 90px;/*altura */
+     width: 140px;/*largura */
+}
+ul {
+  display: flex;/*indica a propriedade FlexBox */
+  flex-direction: row;/*colocar os elelmentos na horizontal ou na vertical */
+
+}
+li a {
+  text-decoration: none; /*Remover o sublinhado */
+  font-size: 20px;/*Tamanho da fonte */
+  color: rgb(0, 0, 0);
+  padding: 20px; /*separa os titulos*/
+}
+
+li {
+  list-style: none;/*Remover formataçao da lista */
+
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.btn-logo{
+  width: 175px;
+  height: 45px;
+  border-radius: 35px;/*borda do botao*/
+  background-color: #ff7b00;/*cor do botao*/
+  color: #ffffff;
+  font-weight: bold;/*fonte do botao*/
+  border: none;/*remove a borda*/
+  margin: 25px;/*espacamento externo*/
+}
