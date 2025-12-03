@@ -12,6 +12,9 @@ li a {
   font-size: 20px;/*Tamanho da fonte */
   color: rgb(0, 0, 0);
   padding: 20px; /*separa os titulos*/
+  display: flex;
+  align-items: center;
+  margin: 30px;
 }
 
 li {
@@ -33,5 +36,37 @@ li {
   color: #ffffff;
   font-weight: bold;/*fonte do botao*/
   border: none;/*remove a borda*/
-  margin: 25px;/*espacamento externo*/
+  margin: 35px;/*espacamento externo*/
 }
+.banner{
+  background-image: url("./assets/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: 1650px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 45px;
+  border-radius: 20px;
+  
+}
+.texto-banner{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
