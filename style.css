@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 #logo{
      height: 90px;/*altura */
      width: 140px;/*largura */
@@ -60,7 +65,93 @@ li {
   margin: auto;
   font-size: 60px;
   font-weight: lighter;
+  height: 50px;
+  
+  
 }
+.caixa-texto-banner{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 25px;
+}
+.texto{
+  display: flex;
+  padding: 25px;
+}
+.quadrado-banner{
+  width: 850px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ align-items: center;
+
+}
+
+.caixa-formas {
+  width: 750px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  
+}
+
+.formas {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.quadrado {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 12px;
+  
+}
+
+.btn-search{
+  background-color: #ff7b00 ;
+  width: 100px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  
+ 
+}
+.cor-menu{
+  color: black;
+}
+.titulo-tour{
+  font-weight: bold;
+  font-size: 35px;
+ 
+
+}
+.tour{
+  margin: 105px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+  
+  width: 500px;
+  
+  
+  
+
+}
+
+
+
 
 
 
