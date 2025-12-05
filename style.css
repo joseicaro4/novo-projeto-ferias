@@ -138,16 +138,24 @@ li {
 
 }
 .tour{
-  margin: 105px;
+  margin: 50px;
   display: flex;
   align-items: start;
   justify-content: flex-end;
+  width: 400px;
+}
+.menu-banner{
+  background-color: #ffffff;
+  width: 1500px;
+  margin-left: 180px;/*coloca mais para a direita*/
   
-  width: 500px;
+}
+.texto-mini{
+  font-weight: bold;
+  font-size: 20px;
+  height: 70px;
   
   
-  
-
 }
 
 
