@@ -3,232 +3,365 @@
   src: url("./assets/fonte/Inter-VariableFont_opsz\,wght.ttf");
 }
 
-*{
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --laranja: #EB662B;
 }
 
-#logo{
-     height: 90px;/*altura */
-     width: 140px;/*largura */
+* {
+    padding: 0;
+    margin: 0;
+    
 }
-ul {
-  display: flex;/*indica a propriedade FlexBox */
-  flex-direction: row;/*colocar os elelmentos na horizontal ou na vertical */
 
-}
 li a {
-  text-decoration: none; /*Remover o sublinhado */
-  font-size: 20px;/*Tamanho da fonte */
-  color: rgb(0, 0, 0);
-  padding: 20px; /*separa os titulos*/
-  display: flex;
-  align-items: center;
-  margin: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 15px;
 }
 
 li {
-  list-style: none;/*Remover formataçao da lista */
-
+    list-style: none;
 }
+
+.caixa-logo {
+    height: 40px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+#logo {
+    width: 167px;
+    height: 32px;
+}
+
+.search {
+    color: #757575;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
 .menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
 }
-.btn-logo{
-  width: 175px;
-  height: 45px;
-  border-radius: 35px;/*borda do botao*/
-  background-color: #ff7b00;/*cor do botao*/
-  color: #ffffff;
-  font-weight: bold;/*fonte do botao*/
-  border: none;/*remove a borda*/
-  margin: 35px;/*espacamento externo*/
-}
-.banner{
-  background-image: url("./assets/image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px;
-  width: 1650px;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  margin: auto;
-  padding: 45px;
-  border-radius: 20px;
-  
-}
-.texto-banner{
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
-  font-size: 60px;
-  font-weight: lighter;
-  height: 50px;
-  
-  
-  
-}
-.caixa-texto-banner{
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  height: 25px;
-}
-.texto{
-  display: flex;
-  padding: 25px;
-}
-.quadrado-banner{
-  width: 850px;
-  height: 80px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
- align-items: center;
 
+.cabecalho {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background-color: #EB662B;
+    height: 0px;
+    color: white;
+    border-radius: 22px
+}
+.login:hover{
+  width: 28px;
+  height: 28px;
+  background-color:black;
+}
+
+section {
+    padding: 50px;
+}
+
+.banner {
+    background-image: url(./assets/img/image.png);
+    background-repeat: no-repeat;
+    width: 1800px;
+    height: 702.13px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.caixa-texto-banner {
+    height: 130px;
+    width: 700px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.texto-banner {
+    font-size: 69px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-banner2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.quadrado-banner {
+    width: 850px;
+    height: 80px;
+    background-color: #E7E6E6;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .caixa-formas {
-  width: 750px;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  gap: 5px;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px;
 }
 
 .formas {
-  display: flex;
-  flex-direction: column;
-  
+    display: flex;
+    flex-direction: column;
 }
 
 .quadrado {
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgb(87, 87, 87);
-  border-radius: 12px;
-  
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 12px;
 }
 
-.btn-search{
-  background-color: #ff7b00 ;
-  width: 100px;
-  height: 60px;
-  border-radius: 15px;
-  border: none;
-  
- 
-}
-.cor-menu{
-  color: black;
-}
-.titulo-tour{
-  font-weight: bold;
-  font-size: 35px;
- 
-
-}
-.tour{
-  margin: 50px;
-  display: flex;
-  align-items: start;
-  justify-content: flex-end;
-  width: 400px;
-}
-.menu-banner{
-  background-color: #ffffff;
-  width: 1500px;
-  margin-left: 180px;/*coloca mais para a direita*/
-  
-}
-.texto-mini{
-  font-weight: bold;
-  font-size: 20px;
-  height: 70px;
-}
-.features {
-    background: var(--background-light);
-    padding: 40px 5%;
-}
-
-.feature-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.feature-item {
-    flex-basis: 20%;
-    min-width: 150px;
-    margin: 15px;
-    text-align: center;
-}
-p{
-  font-family: inter;
-
-}
-h2{
-  display: flex;
-  margin: auto;
-  margin-left: 170px;
-}
-
-.icon-circle {
-    width: 60px;
+.caixa-btn-search {
+    background-color: #EB662B;
     height: 60px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    margin: 0 auto 10px;
+    width: 136.95px;
+    border-radius: 12px;
+    margin: 10px 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: var(--text-on-dark);
-    font-size: 1.5em;
-    /* Aqui você colocará o ícone real (SVG, Font Awesome, etc) */
 }
-.destination-categories {
+
+.btn-search {
+    border: none;
+    background-color: #EB662B;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-left: 40px;
+}
+.caixa-btn-search:hover{
+  width: 70px;
+  height: 70px;
+  background-color:black;
+
+}
+.btn-search:hover{
+  width: 70px;
+  height: 70px;
+  background-color:black;
+
+}
+
+.section-qualidades {
+    margin: auto;
+    width: 1320px;
+    height: 296.38px;
+    color: #05073C;
+}
+
+
+.caixa-titulo {
+    margin-bottom: 50px;
+}
+
+.caixa-icone {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    margin-top: 30px;
 }
 
-.category-item {
-    text-align: center;
-    width: 100px;
+.texto-titulo1 {
+    height: 45px;
+    font-weight: 700;
+    font-size: 30px;
 }
 
-.category-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.conteiner-icones {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
 }
 
-.category-item img:hover {
-    transform: scale(1.05);
+.bi {
+    font-size: 50px;
+    color: var(--laranja);
+}
+
+.strong {
+    font-size: 16.72px;
+    font-weight: 500;
+}
+
+.texto-icone {
+    font-size: 14.88px;
+    font-weight: 400;
+}
+
+.caixa-icone {
+    width: 200px;
+}
+
+.section-carrosel {
+    margin: auto;
+    width: 1320px;
+    height: 390.25px;
+    color: #05073C;
+}
+
+.carrosel {
+    margin-top: 80px;
 }
 
 
+.caixa-box-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.box-titulo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box-descricao {
+    font-size: 14.3;
+    font-weight: 400;
+}
+
+.box-turismo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.caixa-texto-turismo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.Tours-polular {
+    width: 1320px;
+    height: 940.63px;
+    margin: auto;
+    gap: 100px;
+}
+
+.container-tours {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.caixa-titulo-tours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-tours {
+    font-size: 29.41px;
+    font-weight: 700;
+}
+
+.descricao-tours {
+    font-size: 14.3px;
+    font-weight: 400;
+}
+
+.caixa-tours {
+    border: 1px solid black;
+    width: 300px;
+    height: 388.31px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+#img-tours {
+    margin: 15px;
+}
+
+.pais-tours {
+    margin-left: 15px;
+    font-size: 12.29px;
+    font-weight: 400;
+}
+
+.local-tours {
+    margin: 15px;
+    font-size: 15.88px;
+    font-weight: 500;
+}
+
+.caixa-avaliacoes {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    margin: 15px;
+}
+
+.bi-star-fill {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.avaliacoes-tours {
+    font-size: 12.49px;
+    font-weight: 400;
+}
+
+.dias-tours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.img-texto{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+    
+}
 
 
 

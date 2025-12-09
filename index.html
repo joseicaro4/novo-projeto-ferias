@@ -1,152 +1,431 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>viatours</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
         <nav class="menu">
-            <div class="caixa-img-logo">
-               <img src="./assets/logo-1.svg fill.png" alt="">             
+            <div class="caixa-logo">
+                <img src="./assets/img/logo-1.svg fill.png" alt="logo do site " id="logo">
+                <div class="search">
+                    <p>Search destinations or activities</p>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="">Search destinations or activities</a>
-                </li>
-                <li>
-                    <a href="#">Destinations</a>
-                </li>
-                <li>
-                    <a href="#">activities</a>
-                </li>
-                <li>
-                    <a href="#">USD</a>
-                </li>
-                <li>
-                    <a href="#">Sign up</a>
-                </li>              
-            <button class="btn-logo">Login</button>
-            </ul>
+
+            <div class="cabecalho">
+                <ul>
+                    <li><a href="">Destinations</a></li>
+                    <li><a href="">Activities</a></li>
+                    <li><a href="">USD</a></li>
+                    <li><a href="">Sign up</a></li>
+
+
+                </ul>
+                <div>
+                    <li><a href="" class="login">Login</a></li>
+                </div>
+
+            </div>
         </nav>
     </header>
     <main>
-        <section class="section-center">
+
+        <section class="section-1">
             <div class="banner">
-                <div class="caixa-texto-banner">
-                <p class="texto-banner">Your world of joy</p>  
-                <p class="texto">From local escapes to far-flung adventures, find what makes you happy anytime, anywhere</p>  
+                <div class="caixa-banner">
+                    <div class="caixa-texto-banner">
+                        <p class="texto-banner">Your world of joy</p>
+                        <p class="texto-banner2">From local escapes to far-flung adventures, find what makes you happy
+                            anytime, anywhere</p>
+                    </div>
+                </div>
                 <div class="quadrado-banner">
                     <div class="caixa-formas">
                         <div class="quadrado"></div>
-                        <div class="formas">
-                            <p class="cor-menu"><strong>Where</strong></p>
-                            <p class="cor-menu">Search destinations</p>
+                        <div class="formas ">
+                            <p><strong>Where</strong></p>
+                            <p class="text-search">Search destinations</p>
                         </div>
-                    </div>
-                    <div class="caixa-formas">
+                        <div class="quadrado"></div>
+                        <div class="formas ">
+                            <p><strong>When</strong></p>
+                            <p class="text-search">February 05 ~ March 14</p>
+                        </div>
                         <div class="quadrado"></div>
                         <div class="formas">
-                            <p class="cor-menu">When</p>
-                            <p class="cor-menu">February 05 ~ March 14</p>
+                            <p><strong>Tour Type</strong></p>
+                            <p class="text-search">All tour</p>
                         </div>
                     </div>
-                    <div class="caixa-formas">
-                        <div class="quadrado"></div>
-                        <div class="formas">
-                            <p class="cor-menu">Tour Type</p>
-                            <p class="cor-menu">All tour</p>
-                        </div>
-                    </div>
-                    <div class="caixa-formas">
-                        <div class="caixa-btn-search">
-                            <button class="btn-search">
-                                Search
-                            </button>
-                        </div>
+                    <div class="caixa-btn-search">
+                        <button class="btn-search">
+                            Search
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-            </div>                                    
-            </div>            
         </section>
-         <section class="features">
-        <h2>Why choose Travel?</h2>
-        <div class="feature-list">
-            <div class="feature-item">
-                <img src="./assets/ticket.svg.png" alt="">
-                <div class="icon-circle">Ultimate flexibility
+
+        <section class="section-qualidades">
+            <div class="qualidades">
+                <div class="caixa-titulo">
+                    <p class="texto-titulo1">
+                        Why choose Tourz
+                    </p>
                 </div>
-                <p>You're in control, with free
-cancellation and payment options to
-satisfy any plan or budget.</p>
+                <div class="conteiner-icones">
+                    <div class="caixa-icone">
+                        <i class="bi bi-ticket-perforated"></i>
+                        <p class="strong">
+                            Ultimate flexibility
+                        </p>
+                        <p class="texto-icone">You're in control, with free
+                            cancellation and payment options to
+                            satisfy any plan or budget.
+                        </p>
+                    </div>
+                    <div class="caixa-icone">
+                        <i class="bi bi-airplane-engines"></i>
+                        <p class="strong">
+                            Memorable experiences
+                        </p>
+                        <p class="texto-icone">Browse and book tours and activities
+                            so incredible, you'll want to tell your
+                            friends.
+                    </div>
+                    <div class="caixa-icone">
+                        <i class="bi bi-gem"></i>
+                        <p class="strong">
+                            Quality at our core
+                        </p>
+                        <p class="texto-icone">High-quality standards. Millions of
+                            reviews. A tourz company.
+                    </div>
+                    <div class="caixa-icone">
+                        <i class="bi bi-award"></i>
+                        <p class="strong">
+                            Award-winning support
+                        </p>
+                        <p class="texto-icone">New price? New plan? No problem.
+                            We're here to help, 24/7.
+                    </div>
+                </div>
             </div>
-            <div class="feature-item">
-                <img src="./assets/logo3.png" alt="">
-                <div class="icon-circle">Memorable experiences</div>
-                <p>
-Browse and book tours and activities
-so incredible, you'll want to tell your
-friends.</p>
-            </div>
-            <div class="feature-item">
-                <img src="./assets/logo4.png" alt="">
-                <div class="icon-circle">Quality at our core</div>
-                <p>
-High-quality standards. Millions of
-reviews. A tourz company.</p>
-            </div>
-            <div class="feature-item">
-                <img src="./assets/lo2.png" alt="">
-                <div class="icon-circle">Award-winning support</div>
-                <p>
-New price? New plan? No problem.
-We're here to help, 24/7.</p>
-            </div>
-        </div>
-    </section>
-     <section class="popular-destinations">
-        <h2>Top Trending Destinations</h2>
-        <div class="destination-categories">
-            <div class="category-item">
-                <img src="[Image placeholder: Categoria 1]" alt="Praia">
-                <p>Praia</p>
-            </div>
-            <div class="category-item">
-                <img src="[Image placeholder: Categoria 2]" alt="Montanha">
-                <p>Montanha</p>
-            </div>
-            <div class="category-item">
-                <img src="[Image placeholder: Categoria 3]" alt="Cidade">
-                <p>Cidade</p>
-            </div>
-            <div class="category-item">
-                <img src="[Image placeholder: Categoria 4]" alt="Aventura">
-                <p>Aventura</p>
-            </div>
-            <div class="category-item">
-                <img src="[Image placeholder: Categoria 5]" alt="Cultural">
-                <p>Cultural</p>
-            </div>
-            <div class="category-item">
-                <img src="[Image placeholder: Categoria 6]" alt="Histórico">
-                <p>Histórico</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-           
+        <section class="section-carrosel">
+            <div class="carrosel">
+                <div class="caixa-box-titulo">
+                    <p class="box-titulo">Trending destinations</p>
+                    <p class="box-descricao">see all</p>
+                </div>
+                <div class="box-turismo">
+                    <div class="paris">
+                        <img src="./assets/img/Paris.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">Paris</p>
+                            <p class="texto-tours">100+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="singapura">
+                        <img src="./assets/img/Singapura.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">Singapura</p>
+                            <p class="texto-tours">300+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="roma">
+                        <img src="./assets/img/Roma.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">Roma</p>
+                            <p class="texto-tours">400+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="bangkok">
+                        <img src="./assets/img/Bangkok.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">Bangkok</p>
+                            <p class="texto-tours">100+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="bali">
+                        <img src="./assets/img/Bali.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">Bali</p>
+                            <p class="texto-tours">600+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="phuket">
+                        <img src="./assets/img/phuket.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">phuket</p>
+                            <p class="texto-tours">200+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="tokyo">
+                        <img src="./assets/img/tokyo.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">tokyo</p>
+                            <p class="texto-tours">700+ Tours</p>
+                        </div>
+                    </div>
+                    <div class="cappadocia">
+                        <img src="./assets/img/Cappadocia.png" alt="">
+                        <div class="caixa-texto-turismo">
+                            <p class="texto-pais">cappadocia</p>
+                            <p class="texto-tours">900+ Tours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="Tours-polular">
+            <div class="caixa-titulo-tours">
+                <p class="titulo-tours">
+                    Find Popular Tours</p>
+                <p class="descricao-tours">See all</p>
+            </div>
+            <div class="container-tours">
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/1.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            paris, france
+                        </p>
+                        <p class="local-tours">
+                            Centipede Tour - Guided Arizona
+                            Desert Tour by ATV
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$189.25</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/2.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            New York, USA
+                        </p>
+                        <p class="local-tours">
+                            Molokini and Turtle Town
+                            Snorkeling Adventure Aboard
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$225</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/3.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            London, UK
+                        </p>
+                        <p class="local-tours">
+                            Westminster Walking Tour &
+                            Westminster Abbey EntryV
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$943</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/4.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            New York, USA
+                        </p>
+                        <p class="local-tours">
+                            All Inclusive Ultimate Circle Island
+                            Day Tour with Lunch
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$771</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/5.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            paris, france
+                        </p>
+                        <p class="local-tours">
+                            Space Center Houston Admission
+                            Ticket
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$189.25</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/6.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            New York, USA
+                        </p>
+                        <p class="local-tours">
+                            Clear Kayak Tour of Shell Key
+                            Preserve and Tampa Bay Area
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$225</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/7.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            London, UK
+                        </p>
+                        <p class="local-tours">
+                            History and Hauntings of Salem
+                            Guided Walking Tour
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$943</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-tours">
+                    <div class="tours">
+                        <img src="./assets/img/8.png" alt="paris, france" id="img-tours">
+                        <p class="pais-tours">
+                            New York, USA
+                        </p>
+                        <p class="local-tours">
+                            Mauna Kea Summit Sunset and
+                            Stars Free Astro Photos Hilo Kona
+                            Waikoloa Pick UpV
+                        </p>
+                        <div class="caixa-avaliacoes">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="avaliacoes-tours">
+                                4.8(243)
+                            </p>
+                        </div>
+                        <div class="dias-tours">
+                            <p class="dias">4 days</p>
+                            <p class="valor">From <strong>$771</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-oferta">
+            <div class="quadrado-oferta"></div>
+            
+        </section>
+        <section>
+            <div class="img-texto">
+                <img src="./assets/img/Captura de tela 2025-12-09 152711.png" alt="">
+            </div>
+        </section>
     </main>
-
     <footer>
 
     </footer>
-
-    
 </body>
+
 </html>
